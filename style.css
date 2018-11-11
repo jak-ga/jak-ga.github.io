@@ -1,0 +1,8 @@
+.mobile {
+    width: 100%;
+    max-width: 844px;
+}
+
+.pc {
+    width: 844px;
+}
