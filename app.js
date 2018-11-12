@@ -9,4 +9,15 @@ $(function(){
         $('#portfolio').addClass("mobile");
     else
         $('#portfolio').addClass("pc");
+    
+    $.ajax({
+        url:'https://hitcounter.pythonanywhere.com/count',
+        type:'get', 
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(err) {
+            console.log("count failed");
+        }
+    });
 });
